@@ -1,0 +1,565 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    position: relative;
+}
+
+
+.logo
+{
+    height: 30px;
+    width: 100px;
+    margin-left: 100px;
+}
+.navbar
+{
+    background-color: #fff;
+    
+}
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(255, 255, 255, 0.96); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.navbar i
+{
+    cursor: pointer;
+   margin-top: 30px;
+    font-size: 30px;
+    margin-left: 1000px;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.navbar-default
+{
+    transition: 500ms ease;
+    background: transparent;
+}
+.navbar-default.scrolled
+{
+    background:white;
+}
+
+
+.home
+{
+    background-image: url(images/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+height: 900px;
+    position: relative;
+}
+
+.scroll-down
+{
+   
+    position: absolute;
+    bottom: 5vh;
+   text-align: center;
+    z-index: 99999999999;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+   
+}
+.scroll-down a
+{
+    color: white;
+        transition: all 5s;
+    transform: rotateX(40deg);
+    background-color: #000;
+    width: 30px;
+    height: 50px;
+    border-radius: 30px;
+ border:2px solid #060606;
+    font-size: 28px;
+    padding: 10px 10px;
+}
+
+.title
+{
+    background-image: url(images/topbg.png);
+    background-position:right;
+    background-size: cover;
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    padding-top: 180px;
+    padding-left: 400px;
+}
+
+
+.text-color
+{
+    color: white;
+    
+    
+}
+.sec2
+{
+    margin-top: 100px;
+    text-align: center;
+ 
+}
+.sec2 h1
+{
+    
+    text-align: center;
+  
+}
+
+.photo2 img
+{
+    border: 15px solid #f9f8f8;
+}
+.hello
+{
+    margin-top: 20px;
+    text-align: left;
+}
+.hello h3
+{
+    margin-bottom: 35px;
+}
+.icons 
+{
+    margin-bottom: 20px;
+}
+.icons i
+{
+    margin-right: 25px;
+    
+}
+.hello h4
+{
+    margin-bottom: 20px;
+}
+.btn
+{
+    background-color: #F9D302;
+    padding: 15px;
+    color: white;
+    border-color: #F9D302;
+    margin-top: 30px;
+}
+.btn:hover
+{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.flash
+{
+    
+
+    margin-bottom: 60px;
+   
+
+ 
+    
+}
+
+.sec3
+{
+    margin-top: 90px;
+    background-image: url(images/bg_services.jpg);
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding-bottom: 50px;
+    text-align: center;
+    
+   
+}
+
+.sec3 i
+{
+        font-size: 34px;
+    background-color: #F9D302;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    color: black;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.sec3 i:hover
+{
+    background-color: white;
+    color:  #F9D302;
+    transition: all 0.5s;
+
+}
+.sec3 h2
+{
+    color: #F9D302;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.text-white
+{
+    color: white;
+    
+    
+}
+.sec4
+{
+    margin-top: 70px;
+    text-align: center;
+}
+.sec4 span
+{
+    font-size: 20px;
+    color: #F9D302;
+
+}
+.sec4 h2
+{
+    text-align: center;
+}
+.sec5
+{
+    background-image: url(images/bg_cta_image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 380px;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+.layer
+{
+    background-color: rgba(12, 11, 5, 0.86);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+.sec5 h2
+{
+    margin-top: 80px;
+    margin-bottom: 45px;
+}
+.btns
+{
+    background-color: rgba(12, 11, 5, 0.86);
+    border: 2px solid #f5f5f5;
+    border-radius: .25rem;
+    padding: 15px 32px;
+    color: white;
+    margin-top: 15px;
+      
+}
+.btns:hover
+{
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+
+.sec6
+{
+    margin-top: 70px;
+    padding-bottom: 90px;
+}
+.sec6 .nav-tabs
+{
+  justify-content: center;
+    margin-bottom: 30px;
+    border-color: white;
+   
+}
+.sec6 .nav-link
+{
+    color: #757575;
+    
+    
+}
+.sec6 .nav-link:hover
+{
+    color:#ffc107;
+    background-color: black;
+    
+    
+}
+
+
+.sec6 h2
+{
+   text-align: center;
+    
+}
+ .card
+{
+    overflow: hidden;
+     
+}
+ .card-body
+{
+    display: none;
+    position: absolute;
+    transition: all 1s;
+    cursor: pointer;
+    
+}
+  .card:hover .card-body
+{
+    display:block;
+    bottom: 0px;
+   transition: all 1s;
+  
+    
+}
+ .card:hover .card-img-top 
+{
+    bottom: 100px;
+     transition: all 1s;
+   
+}
+.sec6 .card-img-top 
+{
+    cursor: pointer;
+    position: relative;
+    
+   
+}
+.sec7
+{
+    margin-top: 50px;
+    background-image: url(images/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+    
+}
+.sec7 h2
+{
+    color: #F9D302;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+.sec7 .active
+{
+    color: #F9D302;
+}
+.carous
+{
+    height: 400px;
+}
+.sec7 .img3
+{
+    padding-bottom: 17%;
+}
+.photo
+{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%!important;
+    margin: auto;
+}
+.ico
+{
+    font-size: 11px;
+}
+.ico i
+{
+    margin-right: 17px;
+}
+.text-yellow
+{
+    
+    color:  #F9D302;
+    display: inline-block;
+}
+.sec8
+{
+  text-align: center;  
+    margin-bottom: 80px;
+}
+.sec8 .card
+{
+    border-color: white;
+}
+.card-bodys
+{
+    text-align: left;
+}
+
+.sec8 .card-img-top
+{
+    padding-bottom: 30px;
+}
+.text-span
+{
+    background-color: rgba(249, 211, 2, 0.18);
+    font-size: 12px;
+    color: #F9D302;
+    border-radius: 30px;
+padding: 12px 20px;
+}
+.sec8 h4
+{
+    padding-top: 30px;
+    padding-bottom: 10px
+}
+
+.sec9
+{
+    background-image: url(images/img4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    text-align: center;
+    margin-bottom: 80px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.sec9 h2
+{
+    color:  #F9D302;
+    padding-top: 80px;
+}
+.contact
+{
+    text-align: center;
+}
+.contact .container
+{
+    text-align: left;
+}
+#inputAddress2
+{
+    height: 150px;
+    
+}
+ .contact i
+{
+    font-size: 30px;
+    margin-top: 15px;
+   color: #F9D302;
+}
+
+.contact .btn
+{
+    margin-top: 8px;
+  width: 24%;  
+}
+.sec10
+{
+    text-align: center;
+    background-color: #000002;
+}
+.sec10 i
+{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 12px 17px;
+    margin-right: 10px;
+    margin-top: 40px;
+    transition: all 0.5s;
+}
+.sec10 i:hover{
+    background-color:#F9D302;
+    border-color: #F9D302;
+    cursor: pointer;
+}
+.sec10
+{
+    margin-top: 40px;
+    padding:100px 20px;
+}
+#myBtn
+{
+    display:none;
+    position: fixed;
+    bottom: fixed;
+    right: 30px;
+    bottom: 0px;
+    z-index: 99999;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    background-color: #F9D302;
+    border-radius: 4px;
+    padding: 15px;
+
+    
+}
+#myBtn:hover {
+  background-color: #555;
+}
